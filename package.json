@@ -1,6 +1,10 @@
 {
-  "name": "SexyHobo - Coming Soon Page",
-  "version": "0.8.15",
+  "name": "SexyHobo",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.8.15",
+    "npm":  "1.1.66"
+  },
   "private": true,
   "scripts": {
     "start": "node app"
