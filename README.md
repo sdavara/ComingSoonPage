@@ -1,1 +1,1 @@
-This is a simple COming Soon Page for the website.
+This is a simple Coming Soon Page for the website.
