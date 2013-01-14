@@ -1,6 +1,20 @@
 html
-  head 
-    title Error
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title #{title} - Coming Soon
+
+    link(rel='stylesheet', href='stylesheets/style.css')
+    
+    script(type='text/javascript', src='javascripts/jquery.min.js')
+    script(type='text/javascript', src='javascripts/cufon-yui.js')
+    script(type='text/javascript', src='javascripts/Neutra_Text_TF_500.font.js')
+    script(type='text/javascript', src='javascripts/NexusMixTF-BoldItalic_italic_500.font.js')
+    script(type='text/javascript', src='javascripts/P22_Rodin_Regular_400.font.js')
+
+    script(type='text/javascript')
+      Cufon.replace('a.logo span', {fontFamily: 'P22 Rodin Regular'});
+      Cufon.replace('p.description_text', {fontFamily: 'Neutra Text TF'});
+      Cufon.replace('p.address', {fontFamily: 'NexusMixTF-BoldItalic'});
   body
     h1 An error occurred!
     block content

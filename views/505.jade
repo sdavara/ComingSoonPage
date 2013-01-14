@@ -5,7 +5,8 @@
 extends error
 
 block content
-  h1 Error: #{error.message}
+  h1 505 error!
+  h2 Error: #{error.message}
   if settings['verbose errors']
     pre= error.stack
   else
