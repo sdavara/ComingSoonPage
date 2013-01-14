@@ -3,7 +3,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 
 body{
-margin:0;
+margin:2%;
 padding:0;
 background: #fcf9f7 url(../images/bg.jpg) top center repeat fixed;
 font-family: Helvetica Neue, Helvetica, Arial;
@@ -31,7 +31,7 @@ letter-spacing: 2px;
 text-transform: uppercase;
 color: #977856;
 text-decoration: none;
-line-height: 10px;
+line-height: 100px;
 }
 
 a.logo span{
@@ -45,7 +45,7 @@ display: block;
 .coming_soon{
 width: 233px;
 height: 99px;
-margin: 40px auto 0 auto;
+margin: 0px auto 0 auto;
 background: url(../images/coming_soon.png) left top no-repeat;
 }
 
