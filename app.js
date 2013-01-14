@@ -20,6 +20,15 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  // our custom "verbose errors" setting
+    // which we can use in the templates
+    // via settings['verbose errors']
+  app.enable('verbose errors');
+  // disable them in production
+  // use $ NODE_ENV=production node examples/error-pages
+  if ('production' == app.settings.env) {
+    app.disable('verbose errors');
+  }
 });
 
 app.configure('development', function(){
