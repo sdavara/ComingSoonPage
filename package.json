@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "SexyHobo - Coming Soon Page",
+  "version": "0.8.15",
   "private": true,
   "scripts": {
     "start": "node app"
