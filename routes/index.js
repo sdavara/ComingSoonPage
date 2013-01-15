@@ -4,5 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'SexyHobo' });
+  console.log('From inside app : ' + 'Need to pull the coolTitleDescr variable here');
+  res.render('index', { title: 'SexyHobo',
+                        description: 'Need to pull the coolTitleDescr variable here'});
 };

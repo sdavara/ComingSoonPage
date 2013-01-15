@@ -10,6 +10,12 @@ var express = require('express')
 
 var app = express();
 
+titleDescr_obj = require('./coolTitleDescr');
+
+console.log(titleDescr_obj['t' + String(randomIntBetween(1,20))]);
+var coolTitleDescr = titleDescr_obj['t' + String(randomIntBetween(1,20))];
+
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
@@ -75,3 +81,12 @@ app.use(function(err, req, res, next){
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+
+// -----------------------------
+// Utility Functions
+// -----------------------------
+
+function randomIntBetween(from,to)
+{
+    return Math.floor(Math.random()*(to-from+1)+from);
+}
