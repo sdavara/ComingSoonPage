@@ -10,12 +10,6 @@ var express = require('express')
 
 var app = express();
 
-titleDescr_obj = require('./coolTitleDescr');
-
-console.log(titleDescr_obj['t' + String(randomIntBetween(1,20))]);
-var coolTitleDescr = titleDescr_obj['t' + String(randomIntBetween(1,20))];
-
-
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
